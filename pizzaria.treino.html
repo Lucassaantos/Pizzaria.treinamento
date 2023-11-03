@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pizzaria Luke </title>
+    <style>
+*{
+    margin:0 ;
+    border: 0;
+    padding: 0
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    text-align: justify;
+    scroll-behavior: smooth;
+}
+header{
+   background: linear-gradient(to top, #fff, #ff0000);
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+    
+}
+footer{
+    background:linear-gradient(to bottom,#fff,#ff0000);
+    color: #000;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+
+}
+.conteudo{
+    font-size: 1.6rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+    max-width: 1024px;
+    
+
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+    color: rgb(255,0,0);
+}
+h2{
+    font-size: 1.9rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.6rem;
+}
+h5{
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+  font-size: 3rem;
+  color: rgb(255,0,0)
+  
+    
+}
+figure{
+    text-align: center;
+
+}
+.imagens-site{
+    border-radius: 10px 10px 50px 10px;
+    width:30% ;
+    height:10% ;
+}
+@media(min-width:280px) and (max-width:450px){
+}
+.imagens-site{
+    border-radius: 10px 10px 10px 10px;
+    width:70% ;
+    height:50% ;
+    border: solid;
+    
+} 
+#compras{
+    
+    margin-top: 5rem;
+    height: 50px;
+     color: rgba(255, 0, 0, 0.75);
+}
+
+
+#grid-conteudo{
+    background-color: white;
+    padding-top: 10px;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.grid div{
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+}
+#formulario{
+    background-color: dimgray;
+}
+input{
+    font-size: 1.8rem;
+    border-radius: 10px;
+    padding: 5px;
+    border:solid
+    
+    
+}
+#mensagem{
+    font-size: 1.8rem;
+    border-radius: 10px;
+    padding: 5px;
+    border:solid
+}
+#btn-limpar{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+#btn-enviar{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+nav{
+    text-align: right;
+    font-size: 1.6rem;
+    word-spacing: 30px;
+    margin-right: 5%;
+    color: azure;
+    padding-bottom: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+    background-color: rgb(255,0,0);
+    padding: 3px;
+    border-radius: 10px;
+}
+a:hover{
+    color: rgb(255, 3, 3);
+    text-shadow: 1px 1px 2px #000;
+    background-color: rgb(255,0,0);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#PIZZAS">PIZZAS</a>
+            <a href="#BEBIDAS">BEBIBAS</a>
+            <a href="#SALGADOS">SALGADOS  </a>
+        </nav>
+       <br>
+       <figure>
+        <img src="pizzaBairro.png" alt="logo pizza do bairro">
+       </figure>
+    </header>
+    
+    <div id="compras">
+       <h4>Clique aqui e Faça seu pedido</h4>
+       <br>
+       <button id="btn-compras"> <a href="https://api.whatsapp.com/send?phone=5511947380400&text=Ol%C3%A1%20Gostaria%20de%20fazer%20um%20pedido!"> FAZER PEDIDO </a> </button> 
+    
+    <br>
+    <section class="conteudo">
+       <h1> Pizzas, Bebibas e Salgados </h1>
+       <br>
+         
+        <br>
+        <h5>Promoção</h5>
+        <h5>De Segunda a Quinta todas as pizzas por </h5>
+        <h5>apenas R$ 38,99!</h5>
+
+    </section>
+    <br>
+   
+    <br>
+    <a href="#" id="PIZZAS"> </a>
+    <br>
+    <section class="conteudo" id="grid-conteudo">
+        <H5>Cardápio de  Pizzas</H5>
+        <br>
+        <div class="grid">
+            <div>
+                <figure><img class="imagens-site" src="calabresa.jpg" alt="Pizza de Calabresa">
+                <figcaption><a href="#"> Pizza de Calabresa R$ 38.99 </a> </figcaption></figure>
+            </div>
+
+            <div><figure>
+                <img class="imagens-site" src="frango.jpg" alt="Pizza de Frango">
+                <figcaption><a href="#"> Pizza de Frango R$ 39.99 </a> </figcaption>
+            </figure></div>
+
+            <div><figure>
+                <img class="imagens-site" src="marguerita.jpg" alt="Pizza de marguarida">
+            <figcaption><a href="#"> Pizza de Marguerida R$ 40.00</a></figcaption>
+            </figure></div>
+
+            <div><figure><img class="imagens-site" src="mussarela.jpg" alt="mussarela">
+            <figcaption><a href="#"> Pizza de Mussarela R$ 36.99 </a></figcaption></figure></div>
+
+            <div><figure><img class="imagens-site" src="palmito.jpg" alt="palmito">
+            <figcaption><a href="#"> Pizza de Palmito R$ 41.00</a></figcaption></figure></div>
+
+            <div><figure> <br><img class="imagens-site" src="portuguesa.jpg" alt="portuguesa">
+            <figcaption><a href="#"> Pizza Portuguesa R$ 39.99 </a></figcaption></figure></div>
+
+
+        </div>
+       
+    </section>
+    <br>
+    <a href="#" id="BEBIDAS"></a>
+    <br>
+    <section class="conteudo" id="grid-conteudo">
+        <H5>Bebidas</H5>
+        <br>
+        <br>
+        <div class="grid">
+            <div>
+                <figure><img class="imagens-site" src="refri2.jpg" alt="Fanta Laranja">
+                <figcaption><a href="#"> Fanta Laranja  R$ 8.50 </a> </figcaption></figure>
+            </div>
+
+            <div><figure>
+                <img class="imagens-site" src="refri1.jpg" alt="Coca Cola">
+                <figcaption><a href="#"> Coca Cola R$ 10.00</a> </figcaption>
+            </figure></div>
+
+            <div><figure>
+                <img class="imagens-site" src="refri3.jpg" alt="Soda">
+            <figcaption><a href="#"> Soda Limão R$ 7.50 </a></figcaption>
+            </figure></div>
+
+            <div><figure> <br><img class="imagens-site" src="refri4.jpg" alt="Latinha">
+            <figcaption><a href="#"> Refrigerantes  Latinha R$ 5.00</a></figcaption></figure></div>
+
+            <div><figure> <br><img class="imagens-site" src="refri5.jpg" alt="Latinha">
+            <figcaption><a href="#"> Coca Cola  R$ 5.00</a></figcaption></figure></div>
+
+            <div><figure> <br><img class="imagens-site" src="refri6.jpg" alt="Latinha">
+            <figcaption><a href="#"> Guarana Artartica  R$ 5.00  </a></figcaption></figure></div>
+
+
+        </div>
+       
+    </section>
+    <br>
+    <a href="#" id="SALGADOS"></a>
+    <section class="conteudo" id="grid-conteudo">
+        <H5> Cardapio de Salgados </H5>
+        <br>
+        <div class="grid">
+            <div>
+                <figure><img class="imagens-site" src="salgados1.jpg" alt="Coxinhas">
+                <figcaption><a href="#"> Coxinhas </a> </figcaption></figure>
+            </div>
+
+            <div><figure>
+                <img class="imagens-site" src="salgados2.jpg" alt="Bolinho de Queijo">
+                <figcaption><a href="#"> Bolinho de Queijo   R$ 2.50  </a> </figcaption>
+            </figure></div>
+
+            <div><figure>
+                <img class="imagens-site" src="salgados3.jpg" alt="Rizzoli">
+            <figcaption><a href="#"> Rizzoli  R$ 2.50</a></figcaption>
+            </figure></div>
+
+            <div><figure> <br><img class="imagens-site" src="salgados4.jpg" alt="Calabresa">
+            <figcaption><a href="#"> Frios Calabresa  R$ 2.50</a></figcaption></figure></div>
+
+            <div><figure> <br><img class="imagens-site" src="salgados5.jpg" alt="Bolinho de Carne">
+            <figcaption><a href="#"> Bolinho de Carne  R$ 2.50</a></figcaption></figure></div>
+
+            <div><figure> <br><img class="imagens-site" src="salgados6.jpg" alt="KIBI">
+            <figcaption><a href="#"> Kibi  R$ 2.50</a></figcaption></figure></div>
+
+
+        </div>
+       
+    </section>
+
+
+
+    <br>
+
+    <footer>
+        <h3>Pizza do Birro</h3>
+        <br>
+        <h4> A melhor da Região de São Paulo </h4>
+        <br>
+        <p>Tel:0000-0000</p>
+        <p> Whatsapp: 0000-0000 </p>
+        <p>São Paulo- Zona leste</p>
+        <P>Faça seu pedido já, Aberto das 18:00 as 00:00 </P>
+
+
+    </footer>
+</body>
+</html>
